@@ -53,6 +53,28 @@
           "response": []
         },
         {
+          "name": "Get User by UserName",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/users/byUsername/{{username}}",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "users",
+                "byUsername",
+                "{{username}}"
+              ]
+            },
+            "description": "Obtiene un usuario por su username (usa la variable {{username}})."
+          },
+          "response": []
+        },
+        {
           "name": "Create User",
           "request": {
             "method": "POST",
